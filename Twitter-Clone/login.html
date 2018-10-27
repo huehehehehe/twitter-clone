@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta charset="utf-8">
+         <title>Twitter Login</title>
+         <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+         <link href="main.css" rel="stylesheet">
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <script src="main.js"></script> 
+     </head>
+     <body class="segoe">
+        <div class="topcontainer">
+            <div class="topbar">
+                <i class="fa fa-twitter logocenter" aria-hidden="true" ></i>
+            </div>
+
+            <div class="AppContent wrapper wrapper-signup" id="page-container">
+                <link rel="stylesheet" href="https://abs.twimg.com/a/1511833274/css/t1/t1_signup.bundle.css">
+                <div class="page-canvas">
+                    <div class="signup-wrapper">
+                        <h1>
+                            Log In To Twitter
+                        </h1>
+                        <div class="t1-form signup " id="phx-signup-form">
+                            
+                            <div class="textbox">
+                                <div class="prompt email">
+                                    <div data-fieldname="email" class="field">
+                                        <div class="sidetip">
+                                            <p id="emailerror" role="alert" class="invalid error">Please enter a valid email.</p>
+                                        </div>
+                                        <input type="text" placeholder="Email" aria-required="true" class="email-input" id="email">
+                                    </div>
+                                </div>
+                                <div class="prompt password">
+                                    <div data-fieldname="password" class="field">
+                                        <div class="sidetip">
+                                            <p id="passerror" role="alert" class="blank error">Please enter a password.</p>
+                                        </div>
+                                        <input type="password" placeholder="Password" aria-required="true" id="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doit">
+                                <!-- <a href="timeline.html"> -->
+                                <div class="sign-up-box">
+                                    <input type="submit" value="Log In" id="submit_button" onclick="signIn()" class="signup EdgeButton EdgeButton--primary EdgeButton--large submit">
+                                </div>
+                                <!-- </a> -->
+                            </div>
+                            <div class="doit">
+                                <a href="signup.html">
+                                <div class="sign-up-box">
+                                    <input type="submit" value="Sign Up" id="submit_button" class="signup EdgeButton EdgeButton--primary EdgeButton--large submit">
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

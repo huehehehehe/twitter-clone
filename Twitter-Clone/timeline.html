@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta charset="utf-8">
+         <title>Twitter Wall</title>
+         <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+         <!-- <link rel="styesheet" href="timeline.css" type="text/css" media="screen"/> -->
+         <link href="main.css" rel="stylesheet">
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <script src="main.js"></script> 
+     </head>
+     <body class="segoe" style="background: rgb(230, 236, 240);">
+        <div class="body">
+                <div class="navigation">
+                    <header>
+                        <nav>
+                            <a href="timeline.html">
+                                   <i class="fab fa-twitter logocenter" aria-hidden="true"></i>
+                            </a>
+                           <ul id="nav-bar-top">
+                               <li><a href="timeline.css"><i class="fas fa-home"> Home</i></a></li>
+                               <li><a href="notification.html"><i class="far fa-bell"> Notification</i></a></li>
+                               <li><a href="messages.html"><i class="far fa-envelope"> Messages</i></a></li>
+                           </ul> 
+                           <div id="nav-search-top">
+                               <input type="text" placeholder="Search Twitter">
+                               <img src="IMG/IMG_1526.JPG" alt="Profile Picture">
+                               <button id="twitnav" class="twitnav">Tweet</button>
+                            </div>
+                        </nav>
+                    </header>
+                </div>
+
+                <section class="wallcontainer">
+                        <div class="profilecard">
+                           <div class="background">
+                            <div class="profilecardhead">
+                                <img src="IMG/IMG_1570.JPG" alt="background Picture">
+                            </div>
+                            <div class="profilecardimagediv">
+                                <img src="IMG/IMG_1526.JPG" alt="Profile Picture">
+                            </div>
+                           
+                            <div class="profilecardnameidcont">
+                                <div class="profilecardnamecont">
+                                    <span id="profilecardname">
+                                        <h3>Your Name</h3>
+                                    </span>
+                                </div>
+                                <span id="profilecarduid"></span>
+                            </div>
+
+                            <div class="profilecardstatsdiv">
+                         <ul class="profilecardstatslist">
+                             <li class="profilecardstatslistitem">
+                                 <span class="dispblk">
+                                     <span class="statslistitemhead">Tweets</span>
+                                     <span id="statslistitemcount" class="statslistitemcount">0</span>
+                                 </span>
+                             </li>
+ 
+                             <li class="profilecardstatslistitem">
+                                 <span class="dispblk">
+                                     <span class="statslistitemhead">Following</span>
+                                     <span class="statslistitemcount">35</span>
+                                 </span>
+                             </li>
+ 
+                             <li class="profilecardstatslistitem">
+                                 <span class="dispblk">
+                                     <span class="statslistitemhead">Followers</span>
+                                     <span class="statslistitemcount">34</span>
+                                 </span>
+                             </li>
+                         </ul>
+                             </div>
+                         </div>
+
+                         <div class="TrendingTopic">
+                                <h2>Worldwide Trending</h2>
+                                <ol id="trendingnow">
+                                    <li>Massachusets</li>
+                                    <li>Pochinki</li>
+                                    <li>Twitter</li>
+                                    <li>Proyektor</li>
+                                    <li>Codewars</li>
+                                    <li>Ngeblog</li>
+                                    <li>Astrea</li>
+                                    <li>Bali</li>
+                                    <li>Tenggo</li>
+                                    <li>makersdisini</li>
+                                    <li>Python</li>
+                                    </ol>     
+                            </div>
+                         </div> 
+                         
+                         <div class="rightcontainer">
+                                <div class="posttweetcontainer">
+                                    <img class="posttweetprofimg" src="IMG/IMG_1526.JPG" alt="Profile Picture">
+                                    <div class="ml56px">
+                                        <div class="posttweettacontainer">
+                                            <textarea id="posttweetta" class="posttweetta" placeholder="What's happening?"></textarea>
+                                            <div class="posttweetcountcont">
+                                                <span class="posttweetcount"><span id="totalchars">0</span>/250</span>
+                                            </div>
+                                        </div>
+                                        <div class="posttweetbutcont">
+                                            <button id="posttweetbut" class="posttweetbut" onclick="addTweet()">Tweet</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tweetscontainer" class="tweetscontainer">
+                                       <div class="tweeting">    
+                                           <div class="data-tweet">
+                                               <img src="IMG/1.jpg">
+                                               <strong>Mike Andrew</strong> <span>@MikeAn . 45m</span>
+                                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium dolorem accusamus sapiente, fugiat optio, quam officiis qui rem vitae praesentium deserunt autem blanditiis, natus animi repellat hic amet itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi molestiae minus nobis neque nostrum iure deserunt, totam facere laboriosam alias quos, tempore animi. Veniam dolor vero, id impedit deserunt ea.</p>
+                           
+                                               <div class="btn-tweet">
+                                                   <a href=""><i class="fa fa-comment"></i></a>
+                                                   <a href=""><i class="fas fa-retweet"></i></a>
+                                                   <a href=""><i class="fa fa-heart"></i></a>
+                                                   <a href=""><i class="fab fa-gitter"></i></a>
+                                               </div>
+                                           </div>
+                                       </div>
+           
+                                           <div class="data-tweet">
+                                               <img src="IMG/2.jpg">
+                                               <strong>Muhammad Arsalan</strong> <span>@Arsalan . 45m</span>
+                                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nobis aspernatur dolor pariatur magnam sequi error nam. Libero voluptatibus odit dicta aspernatur est enim sint vitae quisquam beatae alias ducimus sapiente sequi cupiditate atque possimus quae, nemo numquam voluptatum facere quos quod qui delectus? Ut unde illum iure velit quidem tenetur at explicabo expedita, iste eius repudiandae praesentium dolorum doloribus dolorem ducimus, fugiat maiores aut sint, dolores quaerat ipsum vero dignissimos harum. Impedit, omnis quam!</p>
+                           
+                                               <div class="btn-tweet">
+                                                   <a href=""><i class="fa fa-comment"></i></a>
+                                                   <a href=""><i class="fas fa-retweet"></i></a>
+                                                   <a href=""><i class="fa fa-heart"></i></a>
+                                                   <a href=""><i class="fab fa-gitter"></i></a>
+                                               </div>
+                                           </div>
+           
+                                           <div class="data-tweet">
+                                               <img src="IMG/3.jpg">
+                                               <strong>Daniel De Los Santos</strong> <span>@DanSantos . 45m</span>
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam numquam libero atque, voluptate officiis praesentium minima dolorem cupiditate quibusdam aliquid blanditiis nulla odio culpa exercitationem! Odio dolore tempore, hic consequatur aliquam voluptas sint aut ab placeat dolores facilis laudantium sed praesentium culpa labore tempora facere architecto quis recusandae illum esse distinctio voluptates fuga ipsam! Laboriosam accusamus delectus nemo dignissimos doloribus? Praesentium id, cumque delectus facere dolorem illum neque et a illo repudiandae adipisci distinctio explicabo omnis, deleniti commodi modi itaque officiis accusantium amet repellendus magnam ratione eius! Delectus odit nam qui voluptates vel explicabo itaque nulla minima rerum velit aliquid quis cum mollitia quidem aspernatur dolorum quisquam voluptate eveniet omnis deserunt corrupti atque, quae alias. Fuga, vitae! Quisquam totam esse soluta eaque qui veritatis ad atque vero nihil, ipsam pariatur consequuntur magni error eligendi deserunt. Tenetur perspiciatis doloribus fuga iste similique laboriosam adipisci? Voluptates quo repellendus non obcaecati asperiores fugiat.</p>
+                           
+                                               <div class="btn-tweet">
+                                                   <a href=""><i class="fa fa-comment"></i></a>
+                                                   <a href=""><i class="fas fa-retweet"></i></a>
+                                                   <a href=""><i class="fa fa-heart"></i></a>
+                                                   <a href=""><i class="fab fa-gitter"></i></a>
+                                               </div>
+                                           </div>
+           
+                                           <div class="data-tweet">
+                                               <img src="IMG/4.jpg">
+                                               <strong>Musaab Mukhtar</strong> <span>@MusaabMukh . 45m</span>
+                                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quia sed tempora quo? Iste deserunt, eligendi officia vero omnis accusantium id in dolorem nemo consequuntur?</p>
+                           
+                                               <div class="btn-tweet">
+                                                   <a href=""><i class="fa fa-comment"></i></a>
+                                                   <a href=""><i class="fas fa-retweet"></i></a>
+                                                   <a href=""><i class="fa fa-heart"></i></a>
+                                                   <a href=""><i class="fab fa-gitter"></i></a>
+                                               </div>
+                                           </div>     
+                                </div>
+                            </div>
+
+                            <div class="follow">
+                                    <div id="head-follow">
+                                        <h3>Who to follow</h3>
+                                        <a href="">Refresh</a>
+                                        <a href="">View all</a>
+                                        
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <div id="info-follow">
+                                            <img src="IMG/5.jpg">
+                            
+                                            <div class="follow-data">
+                                                <strong>Gopi Robertson</strong> 
+                                                <span>@RobGo</span>
+                                                <br>
+                                                <button class="btn-follow">Follow</button>
+                                            </div>
+                                            <div class="clear"></div>
+                                    </div>
+
+                                    <div id="info-follow">
+                                        <img src="IMG/6.jpg">
+                            
+                                        <div class="follow-data">
+                                            <strong>Paul Harry</strong> 
+                                               <span>@PaulHar</span>
+                                                <br>
+                                            <button class="btn-follow">Follow</button>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div id="info-follow">
+                                        <img src="IMG/7.jpg">
+                            
+                                        <div class="follow-data">
+                                            <strong>Ryan Smith</strong> 
+                                            <span>@Rsmith</span>
+                                            <br>
+                                           <button class="btn-follow">Follow</button>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                            </div>
+                                                    
+                 </section>
+        </div>
+     </body>
+            

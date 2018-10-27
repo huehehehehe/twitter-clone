@@ -1,0 +1,87 @@
+* {
+    margin:0;
+  }
+body {
+    background-color:#1da1f2;
+    background-image:url("https://vignette.wikia.nocookie.net/candh/images/9/97/Smicon_twitter.png/revision/latest/scale-to-width-down/590?cb=20180128001511");
+    background-repeat:no-repeat;
+    background-size: auto;
+    background-position:center;
+    z-index:1;
+  }
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   }
+  
+a {
+text-decoration:none;
+    color:rgb(150, 150, 150)
+  }
+  
+section {
+    
+  }
+#left {
+    
+    height:95vh;
+    width:50%;
+    float:left;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+  }
+#left h1 {
+    padding:15px 0px;
+  }
+#right {
+    background-color:white;
+    height:95vh;
+    width:50%;
+    float:right;
+  }
+
+.doit{  
+  background:#FFF;
+  height: 100%;
+}
+
+#submit_button {
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    border-radius: 100px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: auto;
+    line-height: 24px;
+    padding: 12px 20px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: 392px;
+   }
+  
+#copyright {
+    
+    background-color:#e6ecf0;  
+    clear: both;	
+  }
+  
+#copyright-list {
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    height:5vh;
+  }
+  
+#copyright-list li {
+    padding-right:15px;
+    color:rgb(150, 150, 150);
+    font-size:13px
+  }
